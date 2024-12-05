@@ -1,0 +1,1408 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&family=Bebas+Neue&family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&family=Teko:wght@300..700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Google Sans Regular;"
+}
+
+body {
+    /* background-color: #000000; */
+    /* background-color: #0f1620ff; */
+    background-color: #101010;
+    /* overflow: hidden; */
+}
+
+header {
+    width: 100%;
+    height: 5vh;
+    background-color:#101010;
+    /* background-color: #0f1620ff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 100px; */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fefefe;
+    font-family: 'Bangers', system-ui;
+    letter-spacing: 2px;
+}
+
+.hamb {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    background-color:#101010;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 25px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.nav-bar ul li a:hover {
+    color: #101010;
+    background-color: #fefefe;
+}
+
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .hamb {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamb .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #101010;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 500px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+
+}
+
+
+p {
+    letter-spacing: 1.5px;
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-family: 'Bangers', system-ui; */
+    font-size: 50px;
+    color: #fefefe;
+    line-height: 60px;
+
+}
+
+
+#f1 {
+    font-size: 65px;
+}
+
+#f2 {
+    margin-left: 26px;
+}
+
+#f3 {
+    font-size: 60px;
+    margin-left: 26px;
+}
+
+#f4 {
+    margin-left: 26px;
+    font-size: 70px;
+}
+
+#f5 {
+    margin-left: 26px;
+    font-size: 50px;
+}
+
+#f6 {
+    margin-left: 26px;
+    font-size: 60px;
+}
+
+footer {
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 12rem;
+  
+}
+footer img{
+    width: 50px;
+    height: 10vh;
+    margin: 10px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+}
+
+body::-webkit-scrollbar-track {
+    background: #101010;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+/* Restante do seu CSS ... */
+
+@media only screen and (max-width: 768px) {
+
+    footer {
+        margin-left: 35%;
+        margin-top: 10%;
+    }
+}
+
+#login {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #101010;
+    font-family: 'Teko', sans-serif;
+}
+
+#tela-login {
+    background-color: #efefef;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: #101010;
+
+}
+#tela-login button{
+   font-size: 18px; 
+   
+}
+#tela-login button:hover{
+    scale: 1.1;
+}
+
+.log {
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px rgb(105, 105, 105);
+    background-color: #efefef;
+    font-size: 23px;
+    letter-spacing: 0.7px;
+    font-family: 'Teko', sans-serif;
+}
+
+.log:focus {
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+button {
+    background-color: #101010ff;
+    color: #efefef;
+    font-family: 'Teko', sans-serif;
+    font-size: 23px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000d9;
+
+}
+
+::-webkit-input-placeholder {
+    color: rgb(0, 0, 0);
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.7px;
+    font-size: 23px;
+}
+
+/* login */
+
+/* cadastro */
+
+label {
+    font-size: 23px;
+    letter-spacing: 0.7px;
+    font-family: 'Teko', sans-serif;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #efefef;
+    padding: 25px;
+    border-radius: 15px;
+    width: 20%;
+}
+
+fieldset {
+    border: 1px solid rgb(105, 105, 105);
+    padding: 5px;
+}
+
+legend {
+    background-color: #101010ff;
+    color: #efefef;
+    font-family: 'Teko', sans-serif;
+    font-size: 23px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.inputBox {
+    position: relative;
+    padding: 5px;
+}
+
+.inputUser {
+    font-size: 20px;
+    font-family: 'Teko', sans-serif;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(105, 105, 105);
+    outline: none;
+    color: black;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -23px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.844);
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#data_nasc {
+    position: absolute;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Teko', sans-serif;
+}
+
+#submit {
+    background-color: #101010ff;
+    color: #efefef;
+    font-family: 'Teko', sans-serif;
+    font-size: 23px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.nav-bar ul li a.active {
+    color: #000000;
+    background: #fefefe;
+}
+
+h1{
+    color: #efefef;
+}
+.inicio{
+        height: 100vh;
+        width: 98%;
+        background-color:#101010;
+
+}
+.login{
+    min-height: 90vh;
+    background-image: url("../img/paulin.png");
+    background-size: cover;
+    background-position: right;
+  
+   
+
+}
+.home{
+    /* background-image: url("../img/funk4.jpg"); */
+    height: 90vh;
+    /* background-position: right; */
+    padding-top: 5%;
+    /* background-size: cover; */
+    /* background-color:#101010; */
+}
+/* cadastro */
+
+.nav-bar {
+    /* background-color: #0f1620ff; */
+    background-color: black;
+}
+
+.nav-bar ul li a.active {
+    color: #000000;
+    background: #fefefe;
+}
+
+header {
+    height: 10vh;
+    background-color: #101010;
+    /* background-color: #0f1620ff; */
+
+}
+
+.cad {
+    background-image: url("../img/ws.png");
+    min-height: 90vh;  
+    background-size: cover;
+    background-position: right;
+
+}
+.boxCad {
+   
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #efefef;
+    padding: 5px;
+    border-radius: 15px;
+    width: 20%;
+}
+
+.dados{
+    min-height: 70vh;
+    /* background-image: url("../img/paulin.png"); */
+    background-size: cover;
+    background-position: right;
+    background-color:transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: whitesmoke;
+
+}
+.dados input{
+    display: flex;
+   
+}
+table{
+    background-color: rgba(0,0,0,.2 );
+    width: 80%;
+    margin:30px auto;
+}
+
+tr{
+    line-height: 30px;
+}
+tr#titulo{
+    font-weight: bold;
+    background-color: rgba(0,0,0,.6 );
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+}
+td {
+    padding: 0px 30px;
+}
+
+
+.tela-login {
+    background-color: #efefef;
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 15px;
+    color: #101010ff;
+
+}
+#onclick a{
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+}
+#onclick a:hover{
+    scale: 1.1;
+}
+.painel{   
+    width: 98%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+ 
+}
+.painel p{
+    color: white;
+    font-size: 15pt;
+}
+.painel a{
+    color: white;  
+}
+
+/* css carrinho */
+
+.max-width{
+    width: 100%;
+   
+   
+}
+.bg2{  
+  
+    width: 100%;
+    height: auto;
+    }
+.container{
+  
+    margin:0 auto;
+    display: flex;
+
+ 
+    justify-content: center;
+    min-height: 95vh;
+}
+.titulo{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+    text-shadow: 0 0 10px #545454;
+    color: #2b2b2b;        
+}
+.line{
+    width: 80%;
+    height: 2px;
+    background: #17203f;
+    position: relative;
+    top: 10px;
+}
+.texto-titulo{
+    position: relative;
+    top: -10px;
+    z-index: 99;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    font-size: 25px;
+    background: #8b634a;
+    color: #fff;
+
+}
+.boxcar{
+    width: 15%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2%;
+    transition: 0.5s ease;
+        }
+    
+       .pagina2{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            padding-top: 50px;
+            /* min-height: 300px; */
+       
+        }
+        #part .container{
+            flex-direction: column;
+            align-items: flex-start;
+         
+        }
+        #part .titulo h2{
+            font-family: 'Monteserrat Alternates',sans-serif;
+        }
+        
+        #part .boxcar{
+            box-shadow: 0 5px 20px #2b2b2b;
+            background: transparent;
+            margin-bottom: 120px;
+        }
+        #part .boxcar img{
+            width: 100%;
+        }
+        #part .boxcar h2{
+            margin-top: 10px;
+            text-align: start;
+            font-weight: 300;
+        
+        }
+        #part .boxcar p,span{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: start;
+            font-weight: 500;
+            font-size: 14px;
+            font-style: italic;
+            font-family: 'Monteserrat Alternates',sans-serif;
+        }
+        #part .boxcar .text{
+            margin-right: 80px;
+        
+        }
+        #part .boxcar .text i{
+            position: relative;
+            bottom: 35px;
+            left: 180px;
+            font-size: 20px;
+        
+        }
+        .btn{
+            font-size: 15px;
+            
+       
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .text button{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .car span{
+            display: flex;
+            margin: auto;
+            text-align: center;
+            justify-content: space-between;
+        }
+       #car{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        color: white;border-radius: 50%;      
+        }
+        .showmenu .menucar{
+          inset: 0 -400 0 auto;
+
+
+        }
+        .showmenu .containercar{
+          transform: translateX(-250px);  
+        }
+ .containercar{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    transition:  transform .5s;
+    background-color: white;
+   
+ }
+ .iconecarrinho{
+width: 30px;
+font-size: 50px;
+ }
+ .headercar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+ }
+ .headercar .iconecarrinho{
+position: relative;
+ }
+ .spancar{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    right: -15px;
+ }
+ .listadeprodutos img{
+    width: 50%;
+    filter: drop-shadow(0 50px 20px #0009);
+
+ }
+ .listadeprodutos{
+    display: flex;  
+    gap: 20px;
+ }
+ .listadeprodutos .item{
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+ }
+ .listadeprodutos .item h2{
+    font-weight: 500;
+    font-size: large;
+ }
+ .listadeprodutos .item .preco {
+    letter-spacing: 7px;
+    font-size: small;
+ }
+ .listadeprodutos .item button{
+    background-color: #353432;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+ }
+        .menucar{
+            width: 400px;
+            background-color: #262424;
+            color: white;
+            position: fixed;
+            inset: 0 -400px 0 auto;
+            display: grid;
+            grid-template-rows:70px 1fr 70px ;
+            transition: .5s;
+
+        }
+         .menucar h1{
+            padding: 20px;
+            margin: 0;
+            font-weight: 300;
+            align-items: center;
+        }
+      
+        .menucar .btncar{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        
+        .menucar .btncar .addcar:hover{
+background-color: green;
+        }
+  
+        .menucar .produtoscarrinho .item img{
+            width: 100%;
+        }
+     
+        .menucar .produtoscarrinho .item{
+            display: grid;
+            grid-template-columns: 70px 150px 50px 1fr;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+        }
+       
+        .produtoscarrinho .quantidade span{
+            display: inline-block;
+            padding: 6px ;
+            width: 25px;
+            height: 25px;
+            background-color: #eee;
+            color: #151515;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+      
+        .produtoscarrinho .quantidade span:nth-child(2){
+            background-color: transparent;
+            color: #eee;
+        }
+           
+        .produtoscarrinho .item:nth-child(even){
+            background-color: #0001;
+        }
+        .produtoscarrinho{
+            overflow: auto;
+        }
+        .produtoscarrinho::-webkit-scrollbar{
+            width: 0;
+        } 
+
+        .search-container{
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+          }
+          
+          input#search-bar{
+            margin: 0 auto;
+            width: 100%;
+            height: 45px;
+            padding: 0 20px;
+            font-size: 1rem;
+            border: 1px solid white;
+            border-radius: 12px;
+            outline: none;
+            &:focus{
+              border: 2px solid white;
+              transition: 0.35s ease;
+              color: white;
+              &::-webkit-input-placeholder{
+                transition: opacity 0.45s ease; 
+                  opacity: 0;
+               }
+              &::-moz-placeholder {
+                transition: opacity 0.45s ease; 
+                  opacity: 0;
+               }
+              &:-ms-placeholder {
+               transition: opacity 0.45s ease; 
+                 opacity: 0;
+               }    
+             }
+           }
+          
+          .search-icon{
+            position: relative;
+            float: right;
+            width: 75px;
+            height: 75px;
+            top: -62px;
+            right: -15px;
+           
+          }
+          
+          .loja{
+            width: 98%;
+            display: flex;    
+           margin-left: 30px;
+           margin-right: 30px;
+            
+            
+          }
+          
+          .boxloja {          
+            width: 40%;
+            height: 10vh;          
+            left: 0;
+            right: 0;
+            margin: 8px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            box-shadow: 0 0 10px #848790;                
+          }         
+.btnloja{
+    position: absolute;
+    bottom: 1px;   
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btnloja img{   
+    box-shadow: 0 0 10px #848790;
+}
+.btnloja p{   
+    text-align: center;
+    font-size: 25px;
+}
+@media (max-width: 768px) {
+    .loja {
+        flex-direction: column;
+        width: 100%; /* Ajusta a largura em telas pequenas */
+    }
+
+    .boxloja {
+        width: 90%; /* Aumenta a largura do produto */
+        
+        
+margin-bottom: 15px; /* Espaço maior entre os produtos */
+    }
+
+    .btnloja p {
+        font-size: 18px;  /* Ajuste de fonte em telas pequenas */
+    }
+}
+
+
+
+          #servicos .containerserv input[type=radio]{
+            display: none;
+        
+        
+        }
+        #servicos .containerserv .cards{
+            position:relative ;
+            width: 100%;
+            height: 80vh;
+        }
+        #servicos .containerserv .card{
+            position: absolute;
+            width: 40%;
+            height: 70%;
+            top: -120px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            box-shadow: 0 0 10px #848790;
+            transition: 0.4s ease;
+            cursor: pointer;
+        
+        
+        }
+        #servicos .containerserv .card img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        
+        }
+        #servicos .containerserv .card button{
+            position: absolute;
+            bottom: 2px;
+            z-index:9 ;
+            text-transform: uppercase;
+            cursor: pointer;
+        
+        }
+        
+        #item-1:checked ~ .cards #song-3,
+        #item-2:checked ~ .cards #song-1,
+        #item-3:checked ~ .cards #song-2 {
+            transform: translatex(-100%) scale(0.8);
+            opacity: 0.4;
+            z-index: 0;
+        }
+        
+        
+        #item-1:checked ~ .cards #song-2,
+        #item-2:checked ~ .cards #song-3,
+        #item-3:checked ~ .cards #song-1 {
+            transform: translatex(100%) scale(0.8);
+            opacity: 0.4;
+            z-index: 0;
+        }
+        
+        #item-1:checked ~ .cards #song-1,
+        #item-2:checked ~ .cards #song-2,
+        #item-3:checked ~ .cards #song-3
+    
+      
+         {
+            transform: translatex(0) scale(1);
+            opacity: 1;
+            z-index: 1;
+        }
+        
+       .usuario {
+            width: 100%;             
+            /* background-color: red; */
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        margin-top: 15px;
+        }
+.dadospessoais{
+    width: 50%;    
+ 
+    /* background-color: blue; */
+}
+.interacao{
+    width: 40%;
+   
+    /* background-color:green; */
+}
+        .dadospessoais input{  
+            width: 80%;         
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;        
+            border: 0 2px 2px 0  solid  ;
+            padding: 10px;
+         background-color: transparent;
+         color: white;
+         margin: 10px;
+        }
+        .dadospessoais  ::placeholder{
+color: white;
+font-size: 25px;
+        }
+        .interacao ::placeholder{
+            color: white;
+            font-size: 25px;
+                    }
+        .interacao input{  
+            width: 80%;         
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;        
+            border: none ;
+            padding: 10px;
+         background-color: transparent;
+         margin: 30px;
+        }
+  
+        .perfil{
+            display: flex;
+            /* align-items: end; */
+            justify-content: right;
+     
+           
+        }
+        
+         .perfil p{
+        text-align: right;
+        font-size: 18px;    
+      
+            
+         }  
+         .perfil p:hover{
+           scale: 1.1;
+            
+         }  
+         .perfil a {
+            color: white;
+            margin-left: 3px;
+      
+          cursor: pointer;
+         } 
+         .perfil a span{
+            padding: 6px;
+         }
+         .perfil span{          
+            color: white;
+         }  
+        .perfil span:hover{
+            scale: 1.1;
+           
+        }
+         
+         .interacao{
+            margin-top: 10px;
+            /* color: rgb(239, 23, 23); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+        .lineuser{  
+            display: flex; 
+            justify-content: space-between;         
+            background-color: transparent;
+            width: 80%;
+            border: 0 1px solid;
+            border-radius: 30px;
+            color: white;
+            margin-top: 25px;
+            
+        }
+        .lineuser a{
+            font-size: 30px;
+            font-family:roboto;
+            text-decoration: none;
+            color: white;
+        }
+        .lineuser span{
+            display: flex;
+            align-items: end;
+            font-size: 30px;
+            margin-top: 0;
+            cursor: pointer;
+
+        }
+        .lineuser span:hover{
+         scale: 1.5;
+            color:green;
+        }
+       .musica{
+        width: 98%;
+        display: flex;
+        padding: 10px;
+       margin: 10px;
+       }        
+        .boxMusica{           
+            margin: 3px;
+            width: 50%;
+            height: 55vh;          
+            left: 0;
+            right: 0;
+            margin: 8px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            box-shadow: 0 0 10px #848790;
+        }
+        .comentarios{
+            margin: 3px;
+            width: 50%;
+            height: 55vh;          
+            left: 0;
+            right: 0;
+            margin: 8px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            box-shadow: 0 0 10px #848790;
+        }
+              
+        .cadastro{
+            width: 98%;
+         height: 80vh;        
+         display: flex;
+      margin-left: 20px;
+      padding: 10px;
+      justify-content: space-around;
+     
+        }
+.tela-login2{
+    width: 48%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;   
+    background-color: #efefef; 
+    border-radius: 15px;
+    color: #101010ff;
+    /* justify-content: space-around; */
+   
+}
+.endereco{
+    width: 48%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;    
+    background-color: #efefef;   
+    border-radius: 15px;
+    color: #101010ff; 
+    justify-content: space-around;
+
+}
+.endereco input{
+font-size: 20px;
+
+}
+#btncad{
+    margin-top: 80px;
+   
+ 
+}
+.homepage img{
+    width: 1800px;
+    height: 800px;
+    padding-right: 50px;
+}
+
+.carrinho{
+    width: 98%;
+    display: flex;
+    padding: 10px;
+   margin: 10px;
+    
+}
+ .entrega{
+    width: 50%;
+    margin: 5px;
+    color: whitesmoke;
+  font-size: 10px;
+}
+.entrega label{
+    font-size: 14px;
+}
+.entrega input{
+    height: 15px;
+    
+}
+.entrega h1 {
+    font-size: 30px;
+}
+.entrega span{
+    /* padding: 10px; */
+    margin-top: 10px;
+    font-size: 30px;
+}
+.boxcarrinho {
+    width: 50%;
+    /* background-color:yellow; */
+    margin: 5px;
+    display: flex;
+}
+.boxcarrinho img{
+    width: 90px;
+    height: 90px;
+
+}
+
+.linecar{
+    background-color:whitesmoke;
+    width: 100%;
+    height: 3px;
+}
+.boxsobre{
+    width: 100%;
+    height: 30vh;          
+    left: 0;
+    right: 0;
+    margin: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 10px #848790; 
+}
+
+
+.textoorigem  {
+    /* background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/funkraiz.jfif); */
+    height: 40vh;
+    /* background-repeat: no-repeat; */
+   color: whitesmoke;
+   font-size: 25px;
+   margin-left: 10%;
+   margin-bottom: 10px;
+  
+     
+   
+}
+.textoorigem h4{
+    margin: 20px 20px;
+    text-align: justify;
+}
+.textocultura h4{
+    margin: 20px 20px;
+    text-align: justify;
+}
+.textobrasil h4{
+    margin: 20px 20px;
+    text-align: justify;
+}
+.textobrasil{
+
+      /* background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/funkraiz.jfif); */
+      height: 40vh;
+      /* background-repeat: no-repeat; */
+     color: whitesmoke;
+     font-size: 25px;
+    
+   
+}
+.textocultura{
+     /* background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/funkraiz.jfif); */
+     height: 10vh;
+     /* background-repeat: no-repeat; */
+    color: whitesmoke;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.sobre{
+    width: 100%;
+    height: 110vh;
+    /* background-image:linear-gradient(rgba(5, 4, 4, 0.5), rgba(0,0,0,0.5)), url(../img/funkfundo.jfif); */
+   margin: 10px;
+}
+
+
+
+/* cadasastro de produto */
+
+.produtoCad {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #333;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+td input[type="text"] {
+    width: 90%;
+}
+
+ #togglePassword{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.titulovideo{
+/* background-color: red; */
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px;
+width: 90%;
+height: 50vh;
+
+}
+
+.senha{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px rgb(105, 105, 105);
+    background-color: #efefef;
+    font-size: 23px;
+    letter-spacing: 0.7px;
+    font-family: 'Teko', sans-serif;
+    margin: 8px 0px 10px;
+    padding: 10px;
+    border-radius: 12px;
+}
+.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.containerMusica {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .comment-section {
+    margin-top: 20px;
+  }
+  .comment-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .comments-list {
+    list-style-type: none;
+    padding-left: 0;
+    color: white;
+  }
+  .comments-list li {
+    margin-bottom: 10px;
+  }
+
+  #musicResuts{
+    width: 30%;
+    height: 50vh;
+  }
+  #musicResuts p{
+    font-size: 10px;
+  }
