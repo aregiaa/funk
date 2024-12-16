@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Flak 2.0 XL",
+        "price": 136.90,
+        "image": "./img/img1.png"
+    },
+    {
+        "id": 2,
+        "name": "Holbrook",
+        "price": 136.90,
+        "image": "./img/img1.png"
+    },
+    {
+        "id": 3,
+        "name": "Jawbreaker",
+        "price": 136.90,
+        "image": "./img/img3.png"
+    },
+    {
+        "id": 4,
+        "name": "Radar EV Path",
+        "price": 136.90,
+        "image": "./img/img4.png"
+    },
+    {
+        "id": 5,
+        "name": "Sutro",
+        "price": 136.90,
+        "image": "./img/img5.png"
+    }
+]
+

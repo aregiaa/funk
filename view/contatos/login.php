@@ -10,6 +10,9 @@
                 <i class="fas fa-eye" id="togglePassword"></i>
             </div>
             <br><br>
+            <div id="forgot-password">
+                <a href="./controller/esqueci-senha.php">Recuperar senha?</a>
+            </div>
             <div>
                 <button type="submit">Entrar</button>
             </div>

@@ -4,5 +4,5 @@ if (!isset($_SESSION)) {
 }
 session_destroy();
 echo "<script>alert('Deslogado com sucesso');</script>";
-header("Refresh:url=../index.php?menuop=home");
+header("Refresh: 1; url=../index.php?menuop=home");  // 
 ?>

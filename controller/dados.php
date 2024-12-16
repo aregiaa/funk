@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['atualizar'])) {
         try {
             // Atualiza os dados do usuário
             if ($user->atualizarDados($id_usuario, $nome, $telefone, $email, $role, $bairro, $logradouro, $numero, $cidade, $estado)) {
-                $_SESSION['message'] = 'Dados do usuário atualizados com sucesso.';
+                echo "<script>alert('Atualizado com sucesso!');</script>";
                 header("Location: ../index.php?menuop=usuario_adm");
                 exit();
             } else {
@@ -130,8 +130,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['atualizar'])) {
         <label for="role">Tornar esse usuário administrador:</label><br>
         <input type="radio" id="sim" name="role" value="admin" <?php echo (isset($dados_usuario['role']) && $dados_usuario['role'] === 'admin') ? 'checked' : ''; ?>>
         <label for="sim">Sim</label><br>
-        <input type="radio" id="nao" name="role" value="user_role" <?php echo (isset($dados_usuario['role']) && $dados_usuario['role'] === 'user_role') ? 'checked' : ''; ?>>
+        <input type="radio" id="nao" name="role" value="user_role" <?php echo (isset($dados_usuario['role']) && $dados_usuario['role'] === 'user_role') ? 'checked' : 'checked'; ?>>
         <label for="nao">Não</label><br><br>
+
 
 
         <button type="submit" name="atualizar">Atualizar</button>

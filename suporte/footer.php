@@ -21,10 +21,10 @@
         <script src="./js/validar.js"></script>
         <script src="./js/comentarios.js"></script>
         <script src="./js/spotify.js"></script>
+        <script src="./js/usuario.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <!-- <script src="./js/artista.js"></script> -->
 
-        <!-- <script src="./js/suporte.js"></script>
-        <script src="./js/carrinho.js"></script>
-        <script src="./js/buscar.js"></script>
-        <script src="./js/header.js"></script> -->
+
 
         </html>
