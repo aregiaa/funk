@@ -1,33 +1,57 @@
 [
     {
         "id": 1,
-        "name": "Flak 2.0 XL",
+        "name": "Flak 2.0",
         "price": 136.90,
         "image": "./img/img1.png"
     },
     {
         "id": 2,
-        "name": "Holbrook",
-        "price": 136.90,
-        "image": "./img/img1.png"
+        "name": "Half Jacket 2.0",
+        "price": 199.90,
+        "image": "./img/img2.png"
     },
     {
         "id": 3,
-        "name": "Jawbreaker",
-        "price": 136.90,
+        "name": "Lateralis",
+        "price": 120.90,
         "image": "./img/img3.png"
     },
     {
         "id": 4,
-        "name": "Radar EV Path",
-        "price": 136.90,
+        "name": "Boné Cyclone Zip Flow",
+        "price": 139.90,
         "image": "./img/img4.png"
     },
     {
         "id": 5,
-        "name": "Sutro",
-        "price": 136.90,
+        "name": "Touca da Medusa + Lentes",
+        "price": 396.90,
         "image": "./img/img5.png"
+    },
+    {
+        "id": 6,
+        "name": "Boné Crochê I.Metralha",
+        "price": 136.90,
+        "image": "./img/img6.png"
+    },
+    {
+        "id": 7,
+        "name": "Mod Teeth 1 Piet",
+        "price": 159.00,
+        "image": "./img/img7.png"
+    },
+    {
+        "id": 8,
+        "name": "Mizuno Wave Prophecy 12",
+        "price": 179.90,
+        "image": "./img/img8.png"
+    },
+    {
+        "id": 9,
+        "name": "Nike Shox TL",
+        "price": 200.90,
+        "image": "./img/img9.png"
     }
 ]
 

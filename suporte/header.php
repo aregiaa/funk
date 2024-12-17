@@ -42,7 +42,11 @@ session_start();
                 <?php if (isset($_SESSION['user_id']) && $_SESSION['user_role'] === 'usuario'): ?>
                     <div class="perfil">
                         <a href="./index.php?menuop=usuario">
-                            <p>Olá,<?php echo $_SESSION['user_nome']; ?>!</p>
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                            
+                            <p><?php echo $_SESSION['user_nome']; ?></p>
 
                         </a>
                         <a href="./controller/sair.php">
